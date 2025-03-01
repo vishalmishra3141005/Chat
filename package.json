@@ -1,0 +1,25 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "Sample Chat, let us see how it goes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalmishra3141005/Chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vishalmishra3141005/Chat/issues"
+  },
+  "homepage": "https://github.com/vishalmishra3141005/Chat#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.11.0"
+  }
+}
