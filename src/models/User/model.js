@@ -12,7 +12,10 @@ const schema = new mongoose.Schema(
       required: true,
     },
     channels: {
-      type: [String],
+      type: [{
+        user_id: Types.ObjectId,
+        channelId: String,
+      }],
       default: [],
     },
   },

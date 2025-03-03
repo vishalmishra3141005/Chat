@@ -10,8 +10,8 @@ function ToController(controllerClass, ev, socket) {
 }
 
 function sfactory(socket) {
-  socket.on("user/login", ToController(SUserController, ev, socket));
-  socket.on("chat/add", ToController(SChatController, ev, socket));
+  socket.on("user/login", ToController(SUserController, "user/login", socket));
+  socket.on("chat/add", ToController(SChatController, "chat/add", socket));
 }
 
 module.exports = sfactory;

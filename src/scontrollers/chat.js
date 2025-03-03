@@ -17,8 +17,11 @@ class ChatController {
     if (!toUser) this.socket.emit("error", "To User is invalid, register First");
     if (!fromUser) this.socket.emit("error", "From User is invalid, User doesnt exists");
 
-    
-    
+    console.log(toUser.id.toString());
+    this.socket.to(toUser.id.toString()).emit("chat/receive", {
+      from,
+      message
+    });
   }
 }
 

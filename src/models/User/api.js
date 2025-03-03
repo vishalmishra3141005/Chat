@@ -11,7 +11,7 @@ class UserApi {
         const newUser = new UserModel({name: payload.name, email: payload.email});
         console.log(newUser);
         await newUser.save();
-        return newUser.toJSON();
+        return newUser.toJSON({virtuals: true,});
     }
 
 
